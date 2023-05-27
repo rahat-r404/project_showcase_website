@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .contact-form {
+      padding: 20px;
+    }
+
+    .contact-info {
+      padding: 20px;
+    }
+
+    .map-container {
+      padding: 20px;
+    }
+
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="contact.html">Contact</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/index.html">Home</a></li>
+              <li><a class="dropdown-item" href="/project/project.html">Project</a></li>
+              <li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="/about/about.html">About</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Middle container -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Number</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <select class="form-select" id="country-code">
+                    <option value="+880">+880 (BD)</option>
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+91">+91 (India)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+33">+33 (France)</option>
+                    <option value="+49">+49 (Germany)</option>
+                    <option value="+81">+81 (Japan)</option>
+                    <option value="+86">+86 (China)</option>
+                    <option value="+61">+61 (Australia)</option>
+                    <option value="+55">+55 (Brazil)</option>
+                    <option value="+7">+7 (Russia)</option>
+                    <option value="+54">+54 (Argentina)</option>
+                    <option value="+20">+20 (Egypt)</option>
+                    <option value="+49">+49 (Germany)</option>
+                    <option value="+91">+91 (India)</option>
+                    <option value="+62">+62 (Indonesia)</option>
+                    <option value="+39">+39 (Italy)</option>
+                    <option value="+81">+81 (Japan)</option>
+                    <option value="+52">+52 (Mexico)</option>
+                    <option value="+234">+234 (Nigeria)</option>
+                    <option value="+7">+7 (Russia)</option>
+                    <option value="+27">+27 (South Africa)</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control" id="number" required />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p>Phone: +1 123-456-7890</p>
+          <p>Email: info@example.com</p>
+          <p>Address: 123 Street, City, Country</p>
+        </div>
+
+        <!-- Map -->
+        <div class="map-container">
+          <h2>Location</h2>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Global Village&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://capcuttemplate.org/">Capcut Templates</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 400px;
+              }
+
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+              }
+
+              .gmap_iframe {
+                height: 400px !important;
+              }
+            </style>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <footer class="bg-dark py-3 mt-auto bottom-bar">
+    <div class="container">
+      <p class="text-center mb-0 text-white mb-0">© 2023 Your Company Name</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

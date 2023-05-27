@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .topbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .bottombar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-name {
+            margin-top: 10px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="gallery.html">Project Gallery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="/project/project.html">Project</a></li>
+                                <li><a class="dropdown-item" href="/about/about.html">About</a></li>
+                                <li><a class="dropdown-item" href="/contact/contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Project Gallery -->
+    <div class="container my-5">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="project1.jpeg" alt="Project 1">
+                <p class="gallery-name">BotBin</p>
+            </div>
+            <div class="gallery-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p class="gallery-name">BotBin</p>
+            </div>
+            <div class="gallery-item">
+                <img src="project3.jpg" alt="Project 3">
+                <p class="gallery-name">PBL</p>
+            </div>
+            <div class="gallery-item">
+                <img src="project4.jpg" alt="Project 4">
+                <p class="gallery-name">PBL</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/abcd.jpg" alt="Project 5">
+                <p class="gallery-name">Project 5</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/tour1.png" alt="Project 6">
+                <p class="gallery-name">Project 6</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/tour3.png" alt="Project 7">
+                <p class="gallery-name">Project 7</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/tour4.png" alt="Project 8">
+                <p class="gallery-name">Project 8</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/tour2.png" alt="Project 9">
+                <p class="gallery-name">Project 9</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/tour.6.png" alt="Project 10">
+                <p class="gallery-name">Project 10</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/tour5.png" alt="Project 11">
+                <p class="gallery-name">Project 11</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/images/image1.jpg" alt="Project 12">
+                <p class="gallery-name">Project 12</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottombar -->
+    <div class="bottombar">
+        <footer class="bg-dark py-3">
+            <div class="container">
+                <p class="text-center text-white mb-0">© 2023 Project Gallery. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

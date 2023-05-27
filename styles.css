@@ -1,0 +1,62 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar {
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-container {
+    padding: 20px;
+    display: flex;
+}
+
+.left-section {
+    background-color: antiquewhite;
+    width: 30%;
+}
+
+.right-section {
+    width: 70%;
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-left a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.top-bar-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Specific styles for the About page */

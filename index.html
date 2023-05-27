@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+
+    .slider-image {
+      height: 300px;
+      /* Set the desired height for the slider */
+      object-fit: cover;
+    }
+
+    .slider-icon {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* Adjust the position of the bottom bar */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="project/project.html">Project</a></li>
+              <li><a class="dropdown-item" href="gallery/gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="contact/contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="about/about.html">About</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Middle container -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col d-flex justify-content-between align-items-center">
+        <!-- Left Icon -->
+        <span class="slider-icon text-primary" data-bs-target="#slider" data-bs-slide="prev">
+          <i class="bi bi-arrow-left-circle"></i>
+        </span>
+
+        <!-- Slider -->
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+          </ol>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/project2.jpg" class="d-block w-100 slider-image" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/project3.JPG" class="d-block w-100 slider-image" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/project1.jpeg" class="d-block w-100 slider-image" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/IMG_7103.JPG" class="d-block w-100 slider-image" alt="Image 3">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+
+        <!-- Right Icon -->
+        <span class="slider-icon text-primary" data-bs-target="#slider" data-bs-slide="next">
+          <i class="bi bi-arrow-right-circle"></i>
+        </span>
+      </div>
+    </div>
+    <div class="row">
+
+      <h4>Problem-Based Learning</h4>
+      <hr />
+      <p>
+        In the context of education, Problem-Based Learning is an instructional
+        approach where students learn through actively engaging with real-world
+        problems or challenges. Instead of passively receiving information from
+        teachers, students are presented with authentic, open-ended problems that
+        require critical thinking, problem-solving, collaboration, and
+        self-directed learning. In a PBL setting, students work in teams to
+        analyze and understand the problem, identify relevant information, propose
+        solutions, and apply their knowledge and skills to develop a resolution.
+        PBL encourages students to actively explore and investigate the problem,
+        ask questions, conduct research, and apply their learning to real-life
+        situations. PBL is designed to promote deep learning, critical thinking,
+        problem-solving skills, and the ability to transfer knowledge to new
+        contexts. It also fosters collaboration, communication, and self-directed
+        learning skills, which are valuable in the 21st-century workforce. PBL is
+        commonly used in educational settings, including schools, colleges, and
+        universities, across various disciplines and subject areas.
+      </p>
+      <hr />
+      <h4>Robotic</h4>
+      <hr />
+      <p>
+        A robotic project refers to a project that involves the design,
+        development, and implementation of a robot or robotic system. Robotic
+        projects can vary widely in scope, complexity, and application, ranging
+        from small hobbyist projects to large-scale industrial automation systems.
+        Here are some key aspects and considerations in a robotic project: Design:
+        The project starts with defining the purpose, goals, and requirements of
+        the robot. This includes determining the robot's intended tasks,
+        functionality, physical structure, and components. Components and
+        Hardware: Selecting and integrating the necessary hardware components such
+        as motors, sensors, actuators, microcontrollers or single-board computers,
+        power supply, and any other specialized components based on the project
+        requirements. Software and Programming: Developing the software that
+        controls the robot's behavior and functionality. This involves programming
+        the robot using appropriate programming languages, frameworks, or
+        development platforms. Common programming languages for robotics projects
+        include C++, Python, and ROS (Robot Operating System). Mechanics and
+        Assembly: Building or assembling the mechanical structure of the robot
+        based on the design. This may involve 3D printing, machining, or using
+        off-the-shelf components to create the robot's physical body. Sensing and
+        Perception: Integrating sensors to enable the robot to perceive and
+        interact with its environment. This can include sensors like cameras,
+        proximity sensors, ultrasonic sensors, or specialized sensors based on the
+        project requirements.
+      </p>
+      <hr />
+      <h4>Internet of Things(IOT)</h4>
+      <hr />
+      <p>
+        IoT stands for the Internet of Things. It refers to a network of physical
+        objects or "things" embedded with sensors, software, and connectivity that
+        enables them to collect and exchange data over the internet. These objects
+        can include everyday devices such as smartphones, home appliances,
+        wearable devices, vehicles, industrial machinery, and much more. The
+        concept behind IoT is to connect and integrate these objects to enable
+        them to communicate, interact, and share data with each other and with
+        humans. By connecting these devices and enabling them to gather and
+        analyze data, IoT aims to enhance efficiency, automation, and
+        decision-making across various domains. Key characteristics of IoT
+        include: Connectivity: IoT devices are connected to the internet and can
+        communicate with other devices, systems, or platforms. Sensors and Data
+        Collection: IoT devices are equipped with sensors that can collect data
+        such as temperature, humidity, motion, location, and more. Data Processing
+        and Analytics: IoT devices can process and analyze the collected data
+        locally or in the cloud to derive meaningful insights and make intelligent
+        decisions. Automation and Control: IoT enables automation and remote
+        control of devices, allowing for efficient monitoring, management, and
+        control of various processes. Interoperability: IoT devices and systems
+        should be able to work together, exchange data, and operate seamlessly
+        across different platforms and technologies. Security and Privacy: IoT
+        emphasizes the need for robust security measures to protect data, devices,
+        and networks from unauthorized access or misuse. IoT finds applications in
+        various sectors, including smart homes, healthcare, transportation,
+        agriculture, manufacturing, energy management, environmental monitoring,
+        and more. It has the potential to revolutionize industries, improve
+        efficiency, optimize resource utilization, and enable innovative services
+        and solutions.
+      </p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <footer class="bg-dark py-3 mt-auto bottom-bar">
+    <div class="container">
+      <p class="text-center mb-0 text-white mb-0">Copyright &copy; 2023 Your Company Name</p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
